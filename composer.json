@@ -6,8 +6,5 @@
     "zendframework/zend-i18n": "~2.7.3",
     "zendframework/zend-servicemanager": "~2.7.7"
   },
-  "config": {
-    "vendor-dir": "Ip/Lib/vendor"
-  },
   "minimum-stability": "stable"
 }
