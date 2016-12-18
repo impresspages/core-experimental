@@ -15,12 +15,21 @@ if (getcwd() . '/vendor/impresspages/core/bin' != __DIR__) {
 `mkdir -p public/Ip/Internal`;
 
 $assetPaths = glob(dirname(__DIR__) . '/Ip/Internal/*/assets/');
-
 foreach ($assetPaths as $assetPath) {
     $module = basename(dirname($assetPath));
     `mkdir -p public/Ip/Internal/$module/`;
     `cp -rf $assetPath public/Ip/Internal/$module`;
 }
+
+$assetPaths = glob(dirname(__DIR__) . '/Ip/Internal/Content/Widget/*/assets/');
+foreach ($assetPaths as $assetPath) {
+    $widget = basename(dirname($assetPath));
+    `mkdir -p public/Ip/Internal/Content/Widget/$widget/`;
+    `cp -rf $assetPath public/Ip/Internal/Content/Widget/$widget`;
+}
+
+
+
 
 if (!is_dir('public/Plugin')) {
     `cp -rf vendor/impresspages/core/start-pack/Plugin public/`;
@@ -46,3 +55,4 @@ if (
     `cp -rf vendor/impresspages/core/start-pack/index.php public/`;
     `cp -rf vendor/impresspages/core/start-pack/.htaccess public/`;
 }
+
