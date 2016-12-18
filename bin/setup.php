@@ -38,9 +38,11 @@ if (!is_dir('public/file')) {
 if (
     !is_file('public/admin.php') &&
     !is_file('public/favicon.ico') &&
-    !is_file('public/index.php')
+    !is_file('public/index.php') &&
+    !is_file('public/.htaccess')
 ) {
     `cp -rf vendor/impresspages/core/start-pack/admin.php public/`;
     `cp -rf vendor/impresspages/core/start-pack/favicon.ico public/`;
     `cp -rf vendor/impresspages/core/start-pack/index.php public/`;
+    `cp -rf vendor/impresspages/core/start-pack/.htaccess public/`;
 }
