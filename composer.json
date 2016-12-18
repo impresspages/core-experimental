@@ -1,9 +1,13 @@
 {
-  "name": "impresspages/core",
+  "name": "impresspages/core-experimental",
   "version": "5.0.0",
   "require": {
     "php": ">=5.5.0",
-    "aura/router": "~2.3.1"
+    "aura/router": "~2.3.1",
+    "phpmailer/phpmailer": "5.2.16",
+    "psr/log": "1.0.2",
+    "zendframework/zend-i18n": "2.7.3",
+    "zendframework/zend-servicemanager": "2.7.7"
   },
   "autoload": {
     "psr-4": {"Ip\\": "Ip/"}
