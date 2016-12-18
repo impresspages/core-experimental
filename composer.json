@@ -1,5 +1,5 @@
 {
-  "name": "impresspages/core-experimental",
+  "name": "impresspages/coreexperimental",
   "version": "5.0.0",
   "require": {
     "php": ">=5.5.0",
