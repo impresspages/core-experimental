@@ -5,7 +5,7 @@
 
 
 
-if (getcwd() . '/vendor/impresspages/core/bin' != __DIR__) {
+if (getcwd() . '/vendor/impresspages/coreexperimental/bin' != __DIR__) {
     throw new \Exception('This script must be executed from the project root (where composer.json is placed');
 }
 
