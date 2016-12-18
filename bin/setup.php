@@ -34,7 +34,7 @@ if (!is_dir('public/file')) {
     `cp -rf vendor/impresspages/core/start-pack/file public/`;
 }
 
-//user could have removed admin.php or favicon.ico.
+//user could have removed admin.php or favicon.ico. So we do our work only if all three are missing.
 if (
     !is_file('public/admin.php') &&
     !is_file('public/favicon.ico') &&
