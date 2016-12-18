@@ -7,6 +7,7 @@
 
 namespace Ip\Internal\Install;
 
+use Ip\Response;
 use Ip\Response\Redirect;
 
 class PublicController extends \Ip\Controller
@@ -43,6 +44,11 @@ class PublicController extends \Ip\Controller
     public function index()
     {
         $this->init();
+
+        if (isset($_GET['step']) && $_GET['step'] == 'check-rewrites') {
+            $_SESSION['rewritesEnabled'] = true;
+            return new Response('OK');
+        }
 
         if (isset($_GET['step'])) {
             $step = (int)$_GET['step'];

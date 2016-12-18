@@ -56,4 +56,7 @@
 <script type="text/javascript" src="<?php echo ipFileUrl('Ip/Internal/Install/assets/js/bootstrap.js') ?>"></script>
 <script type="text/javascript" src="<?php echo ipFileUrl('Ip/Internal/Install/assets/js/ModuleInstall.js') ?>"></script>
 <script type="text/javascript" src="<?php echo ipFileUrl('Ip/Internal/Install/assets/js/install.js') ?>"></script>
+<script type="text/javascript">
+    var baseUrl = '<?php echo ipConfig()->baseUrl() ?>';
+</script>
 </body>
